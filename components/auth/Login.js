@@ -26,6 +26,11 @@ export default withAuth(
 
     render() {
       if (this.state.authenticated === null) return null;
+
+      const button = this.state.authenticated ?
+      <button onClick={() => {this.props.auth.logout()}}>Logout</button> :
+      <button onClick={() => {this.props.auth.login()}}>Login</button>;
+      
       return this.state.authenticated ? (
         <Redirect to={{ pathname: '/' }} />
       ) : (
