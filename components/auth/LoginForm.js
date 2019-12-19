@@ -14,7 +14,7 @@ export default withAuth(class LoginForm extends Component {
     }
 
     this.oktaAuth = new OktaAuth({ url: props.baseUrl });
-
+    
   }
 
   handleSubmit= (e) => {
@@ -66,6 +66,8 @@ export default withAuth(class LoginForm extends Component {
 
  <div id="formFooter">
       <a class="underlineHover" href="#">Forgot Password?</a>
+      <br/>
+      <a class="underlineHover" href="#">New User</a>
     </div>
 
       </div>

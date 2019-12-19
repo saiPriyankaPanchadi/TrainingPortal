@@ -6,6 +6,7 @@ render(){
   return(
   <div className = 'Home'> 
 <h2 > Welcome to HCL Training </h2>
+
   </div> 
   )
 }

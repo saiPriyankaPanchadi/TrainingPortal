@@ -13,7 +13,6 @@ function onAuthRequired({history}) {
   history.push('/login');
 }
 
-
 function App() {
   return (
     <Security
