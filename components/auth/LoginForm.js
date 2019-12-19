@@ -3,6 +3,7 @@ import React, { Component } from 'react';
 import OktaAuth from '@okta/okta-auth-js';
 import { withAuth } from '@okta/okta-react';
 import './styles.css'
+import {Link} from 'react-router-dom';
 
 export default withAuth(class LoginForm extends Component {
   constructor(props) {
@@ -14,7 +15,7 @@ export default withAuth(class LoginForm extends Component {
     }
 
     this.oktaAuth = new OktaAuth({ url: props.baseUrl });
-    
+
   }
 
   handleSubmit= (e) => {
@@ -65,9 +66,8 @@ export default withAuth(class LoginForm extends Component {
       </form>
 
  <div id="formFooter">
-      <a class="underlineHover" href="#">Forgot Password?</a>
-      <br/>
-      <a class="underlineHover" href="#">New User</a>
+   <Link to="/forgotPassword">Forgot Password?</Link>
+  <span> <Link to="/register">New User/Create a account</Link> </span>
     </div>
 
       </div>
