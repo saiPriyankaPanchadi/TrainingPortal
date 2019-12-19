@@ -52,9 +52,6 @@ export default withAuth(
           <button className="btn btn-dark btn-lg" onClick={this.login}>
             Login
           </button> 
-        <span> <button className="btn btn-dark btn-lg" >
-            Register
-          </button> </span>  
         </div>
       );
 

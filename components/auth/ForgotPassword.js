@@ -16,7 +16,7 @@ class ForgotPassword extends Component {
 
    handleSubmit= (e) => {
     e.preventDefault();
-    alert('reset ink sent');
+    alert('reset link sent to mail');
   }
 
   render() {
