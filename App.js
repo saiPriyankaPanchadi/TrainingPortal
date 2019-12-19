@@ -3,6 +3,7 @@ import logo from './logo.svg';
 import './App.css';
 import {Route} from 'react-router-dom';
 import { Security, SecureRoute, ImplicitCallback } from '@okta/okta-react';
+
 import Login from './components/auth/Login';
 
 import Navbar from './components/layout/Navbar';

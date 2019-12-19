@@ -1,14 +1,69 @@
-import React from 'react'
+import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
+import { withAuth } from '@okta/okta-react';
 
+export default withAuth(
+  class Home extends Component {
+    state = { authenticated: null };
 
-class Home extends React.Component {
-render(){
-  return(
-  <div className = 'Home'> 
-<h2 > Welcome to HCL Training </h2>
+    checkAuthentication = async () => {
+      const authenticated = await this.props.auth.isAuthenticated();
+      if (authenticated !== this.state.authenticated) {
+        this.setState({ authenticated });
+      }
+    };
 
-  </div> 
-  )
-}
-}
-export default Home
+    async componentDidMount() {
+      this.checkAuthentication();
+    }
+
+    async componentDidUpdate() {
+      this.checkAuthentication();
+    }
+
+    login = async () => {
+      this.props.auth.login('/');
+    };
+
+    logout = async () => {
+      this.props.auth.logout('/');
+    };
+
+    render() {
+      if (this.state.authenticated === null) return null;
+
+      const mainContent = this.state.authenticated ? (
+        <div>
+          <p className="lead">
+            You have entered the student portal,{' '}
+            <Link to="/courses">click here</Link>
+          </p>
+          <button className="btn btn-light btn-lg" onClick={this.logout}>
+            Logout
+          </button>
+        </div>
+      ) : (
+        <div>
+          <p className="lead">
+            If you are a new member, please get registered.
+            already have, please proceed to login
+          </p>
+          
+          <button className="btn btn-dark btn-lg" onClick={this.login}>
+            Login
+          </button> 
+        <span> <button className="btn btn-dark btn-lg" >
+            Register
+          </button> </span>  
+        </div>
+      );
+
+      return (
+        <div className="jumbotron">
+          <h1 className="display-4">HCL training portal</h1>
+          {mainContent}
+        </div>
+      );
+    }
+  }
+);
