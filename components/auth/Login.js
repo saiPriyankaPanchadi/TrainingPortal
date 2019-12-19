@@ -24,7 +24,7 @@ export default withAuth(
       this.checkAuthentication();
     }
     
-    onSuc
+
 
     render() {
       if (this.state.authenticated === null) return null;

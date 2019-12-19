@@ -24,7 +24,7 @@ class ForgotPassword extends Component {
        <div class="wrapper ">
         <div id="formContent">
       <h2>Forgot password</h2>
-      <p> send an reset email, please add you're email below</p>
+      <p> send a reset password to your email id.</p>
 
       <form className = 'form' onSubmit={this.handleSubmit}>
         <label>
@@ -32,7 +32,7 @@ class ForgotPassword extends Component {
           <input
             id="username" type="text" class="fadeIn second"
             value={this.state.username}
-            onChange={this.handleUsernameChange} />
+            onChange={this.handleUsernameChange}  />
 
         </label>
        <input id="submit" type="submit" class="fadeIn fourth" value="Email Notification" />
