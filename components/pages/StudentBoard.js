@@ -32,8 +32,8 @@ class StudentBoard extends Component {
     return (
       <div>
         <h1 className='ui container'>Welcome {currentUserName}</h1>
-        <p>You have reached the authorized  student portal</p>
-    
+        <p>You have reached the authorized  student portal</p>   
+
       </div>
     );
   }
