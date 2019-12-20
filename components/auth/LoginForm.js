@@ -67,7 +67,7 @@ export default withAuth(class LoginForm extends Component {
 
  <div id="formFooter">
    <Link to="/forgotPassword">Forgot Password?</Link>
-  <span> <Link to="/register">New User/Create a account</Link> </span>
+  <span> <Link to="/register">New User/Create an account</Link> </span>
     </div>
 
       </div>
