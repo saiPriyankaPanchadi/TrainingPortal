@@ -1,10 +1,20 @@
-import React from 'react';
-import {Link} from 'react-router-dom';
+import React from "react";
+import { Link } from "react-router-dom";
 
 class Navbar extends React.Component {
   render() {
+  
+   /* const sections = ["Home", "Courses", "About", "ContactUS"];
+    const navLinks = sections.map(section => {
+      return (
+        <li>
+          <a href={'/' +section}>{section}</a>
+        </li>
+      );
+    }); */
+
     return (
-<nav className="navbar navbar-expand-sm navbar-dark bg-dark mb-4">
+      <nav className="navbar navbar-expand-sm navbar-dark bg-dark mb-4">
         <div className="container">
           <Link className="navbar-brand" to="/">
             Training Portal
@@ -29,11 +39,21 @@ class Navbar extends React.Component {
                   Courses
                 </Link>
               </li>
+              <li className="nav-item">
+                <Link className="nav-link" to="/about">
+                  About
+                </Link>
+              </li>
+              <li className="nav-item">
+                <Link className="nav-link" to="/contact">
+                  ContactUS
+                </Link>
+              </li>
             </ul>
           </div>
         </div>
       </nav>
-    )
+    );
   }
 }
-export default Navbar
+export default Navbar;
