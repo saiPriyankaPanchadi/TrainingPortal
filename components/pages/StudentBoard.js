@@ -33,12 +33,7 @@ class StudentBoard extends Component {
       <div>
         <h1 className='ui container'>Welcome {currentUserName}</h1>
         <p>You have reached the authorized  student portal</p>
-        <form onSubmit={this.handleSubmit}>
-<input type="text" name="courseName" id="courseName"/>
-  <input id="submit" type="submit" class="fadeIn fourth" value="Submit" />
-</form>
-     
-
+    
       </div>
     );
   }

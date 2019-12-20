@@ -35,9 +35,16 @@ function App() {
                   <Login baseUrl="https://dev-381928.okta.com" />
                 )}
               />
+                 <Route
+                path="/register"
+                render={() => (
+                  <Register baseUrl="https://dev-381928.okta.com" />
+                )}
+              />
               <Route path="/implicit/callback" component={ImplicitCallback} />
               <Route path="/forgotPassword" exact={true} component={ForgotPassword} />
-               <Route path="/register" exact={true} component={Register} />
+            
+             
             </div>
           </div>
         </Security>

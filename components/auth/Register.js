@@ -4,22 +4,46 @@ import OktaAuth from '@okta/okta-auth-js';
 import { withAuth } from '@okta/okta-react';
 import './styles.css'
 import {Link} from 'react-router-dom';
+import LoginForm from './LoginForm';
 
+export default withAuth(
 class Register extends Component {
   constructor(props) {
     super(props);
     this.state = {
-
-      username: '',
-      password: '',
-      firstName:'',
+       authenticated: null,
+       sessionToken: null,
+       username: '',
+        password: '',
+       firstName:'',
       lastName:''
     }
+     this.oktaAuth = new OktaAuth({ url: props.baseUrl });
+     this.checkAuthentication();
   }
 
-  handleSubmit= (e) => {
+async checkAuthentication() {
+      const authenticated = await this.props.auth.isAuthenticated();
+      if (authenticated !== this.state.authenticated) {
+        this.setState({ authenticated });
+      }
+    }
+     componentDidUpdate() {
+      this.checkAuthentication();
+    }
+
+ handleSubmit= (e) => {
     e.preventDefault();
-    alert('registered')
+    this.oktaAuth.signIn({
+      username: this.state.username,
+      password: this.state.password,
+       firstName: this.state.firstName,
+        lastName: this.state.lastName
+    })
+    .then(res => this.setState({
+      sessionToken: res.sessionToken
+    }))
+    .catch(err => console.log('Found an error', err));
   }
 
   handleUsernameChange=(e)=> {
@@ -40,7 +64,7 @@ handlefirstNameChange=(e)=> {
       this.props.auth.redirect({sessionToken: this.state.sessionToken});
       return null;
     }
-
+  
     return (
       <div class="wrapper ">
         <div id="formContent">
@@ -71,14 +95,14 @@ handlefirstNameChange=(e)=> {
         </label>
 
         
-        <input id="submit" type="submit" class="fadeIn fourth" value="Submit" />
+        <input id="submit" type="submit" class="fadeIn fourth" value="Register" />
       </form>
 
- 
+      
 
       </div>
       </div>
     );
   }
 }
-export default Register
+);

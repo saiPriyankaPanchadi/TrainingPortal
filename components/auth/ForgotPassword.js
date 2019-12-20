@@ -28,7 +28,7 @@ class ForgotPassword extends Component {
 
       <form className = 'form' onSubmit={this.handleSubmit}>
         <label>
-          Username:
+          Email:
           <input
             id="username" type="text" class="fadeIn second"
             value={this.state.username}

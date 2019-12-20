@@ -24,12 +24,11 @@ export default withAuth(
       this.checkAuthentication();
     }
     
-
-
     render() {
       if (this.state.authenticated === null) return null;
 
       return this.state.authenticated ? (
+        
         <Redirect to={{ pathname: '/' }} />
       ) : (
       <LoginForm baseUrl={this.props.baseUrl} />

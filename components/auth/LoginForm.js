@@ -62,7 +62,7 @@ export default withAuth(class LoginForm extends Component {
             value={this.state.password}
             onChange={this.handlePasswordChange} />
         </label>
-        <input id="submit" type="submit" class="fadeIn fourth" value="Submit" />
+        <input id="submit" type="submit" class="fadeIn fourth" value="Login" />
       </form>
 
  <div id="formFooter">
