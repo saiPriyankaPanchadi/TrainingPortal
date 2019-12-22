@@ -1,20 +1,13 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import '../auth/styles.css'
 
 class Navbar extends React.Component {
   render() {
   
-   /* const sections = ["Home", "Courses", "About", "ContactUS"];
-    const navLinks = sections.map(section => {
-      return (
-        <li>
-          <a href={'/' +section}>{section}</a>
-        </li>
-      );
-    }); */
-
     return (
-      <nav className="navbar navbar-expand-sm navbar-dark bg-dark mb-4">
+      <div className = 'header-color'>
+      <nav className="navbar navbar-expand-sm navbar-dark mb-4">
         <div className="container">
           <Link className="navbar-brand" to="/">
             Training Portal
@@ -53,6 +46,7 @@ class Navbar extends React.Component {
           </div>
         </div>
       </nav>
+      </div>
     );
   }
 }
