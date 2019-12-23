@@ -30,18 +30,23 @@ class StudentBoard extends Component {
 
     return (
       <div>
-        <h1 className='ui container'>Welcome {currentUserName}</h1>  
+        <h3 className='ui container'>Welcome {currentUserName} on student Portal</h3 >  
+      
         <div style= {{width :'100%' , margin :'auto'}}>
         <Grid className='studentsInfo'>
         <Cell col={12}>
          <div className="demo-tabs">
                 <Tabs activeTab={this.state.activeTab} onChange={(tabId) => this.setState({ activeTab: tabId })} ripple>
-                    <Tab>developers</Tab>
-                    <Tab>testers</Tab>
+                    <Tab>WebDevelopement/UI</Tab>
+                    <Tab>Backend Technolgies</Tab>
+                    <Tab>Database</Tab>
+                    <Tab> Cloud Computing</Tab>
+                    <Tab> Devops</Tab>
+                    <Tab> IOT</Tab>
                    
                 </Tabs>
                 <section>
-                    <div className="content">Content for the tab: {this.state.activeTab}</div>
+                    <div className="content"> Content : {this.state.activeTab}</div>
                 </section>
             </div>    
 
