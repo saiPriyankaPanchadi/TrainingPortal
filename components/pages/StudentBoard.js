@@ -32,8 +32,13 @@ class StudentBoard extends Component {
           <Card shadow={5} style={{width:'100%',margin:'auto',height:'100%'}} >
           <CardTitle style={{ color:'#fff', height:'176px', background:'url(https://d33wubrfki0l68.cloudfront.net/21e9f375447b06a90fb33e1f6b811dc5a43297fb/f4acf/static/blog/posts/introducing-shared-colors/cover.jpg) center/cover'}}> </CardTitle>
           <CardText>UI Developer stands for User Interface Design, a technology-focused role that seeks to create digital software that entices the user into a seamless interaction between human and computer. This career path seeks to improve the user experience by making web page or software interactions simple, fun, easy and effective</CardText>
+          
+         <CardActions border>
+         <button colored >Github</button>
+         <button colored >Github</button>
+         <button colored >Github</button>
+         </CardActions>
           </Card>
-         <CardActions></CardActions>
         </div>
       );
     }
