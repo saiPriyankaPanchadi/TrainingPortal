@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Grid, Cell, Tabs, Tab } from "react-mdl";
+import { Grid, Cell, Tabs, Tab, Card,CardTitle,CardActions,Button,CardMenu,IconButton,CardText } from "react-mdl";
 
 class StudentBoard extends Component {
   constructor(props) {
@@ -29,8 +29,11 @@ class StudentBoard extends Component {
     if (this.state.activeTab === 0) {
       return (
         <div>
-          {" "}
-          <h3>UI</h3>
+          <Card shadow={5} style={{width:'100%',margin:'auto',height:'100%'}} >
+          <CardTitle style={{ color:'#fff', height:'176px', background:'url(https://d33wubrfki0l68.cloudfront.net/21e9f375447b06a90fb33e1f6b811dc5a43297fb/f4acf/static/blog/posts/introducing-shared-colors/cover.jpg) center/cover'}}> </CardTitle>
+          <CardText>UI Developer stands for User Interface Design, a technology-focused role that seeks to create digital software that entices the user into a seamless interaction between human and computer. This career path seeks to improve the user experience by making web page or software interactions simple, fun, easy and effective</CardText>
+          </Card>
+         <CardActions></CardActions>
         </div>
       );
     }
