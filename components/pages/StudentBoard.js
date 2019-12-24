@@ -35,8 +35,6 @@ class StudentBoard extends Component {
           
          <CardActions border>
          <button colored >Github</button>
-         <button colored >Github</button>
-         <button colored >Github</button>
          </CardActions>
           </Card>
         </div>
@@ -45,7 +43,7 @@ class StudentBoard extends Component {
     if (this.state.activeTab === 1) {
       return (
         <div>
-          {" "}
+         
           <h3>Backend</h3>
         </div>
       );
@@ -53,7 +51,7 @@ class StudentBoard extends Component {
     if (this.state.activeTab === 2) {
       return (
         <div>
-          {" "}
+         
           <h3>Database</h3>
         </div>
       );
@@ -61,7 +59,7 @@ class StudentBoard extends Component {
     if (this.state.activeTab === 3) {
       return (
         <div>
-          {" "}
+         
           <h3>cloud</h3>
         </div>
       );
@@ -77,7 +75,7 @@ class StudentBoard extends Component {
     if (this.state.activeTab === 5) {
       return (
         <div>
-          {" "}
+         
           <h3>IOT</h3>
         </div>
       );
