@@ -67,7 +67,6 @@ class StudentBoard extends Component {
     if (this.state.activeTab === 4) {
       return (
         <div>
-          {" "}
           <h3>devops</h3>
         </div>
       );
@@ -75,7 +74,6 @@ class StudentBoard extends Component {
     if (this.state.activeTab === 5) {
       return (
         <div>
-         
           <h3>IOT</h3>
         </div>
       );
