@@ -1,6 +1,4 @@
 import React from 'react'
-import Register from '../components/auth/style.css';
-
 
 class AddCourse extends React.Component {
   constructor() {
