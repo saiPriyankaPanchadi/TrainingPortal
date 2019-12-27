@@ -21,16 +21,19 @@ class TabsContent extends Component {
         }
       >
         <TabList className="tab-nav-container">
-          <Tab className={`${this.state.tabIndex === 0 ? "active" : null}`}>
-            <Courses />
+          <Tab className={`${this.state.tabIndex === 0 ? "tab-selected active" : null}`}>
+            Courses
           </Tab>
-          <Tab className={`${this.state.tabIndex === 1 ? "active" : null}`}>
-            <AddCourse />
+          <Tab className={`${this.state.tabIndex === 1 ? "tab-selected active" : null}`}>
+           AddCourse
           </Tab>
-          <Tab className={`${this.state.tabIndex === 2 ? "active" : null}`}>
-            <AddCourseContent />
+          <Tab className={`${this.state.tabIndex === 2 ? "tab-selected active" : null}`}>
+          AddCourseContent
           </Tab>
         </TabList>
+        <TabsContent>
+        
+        </TabsContent>
       </Tabs>
     );
   }
