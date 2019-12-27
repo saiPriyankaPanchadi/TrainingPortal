@@ -35,7 +35,13 @@ class TabsContent extends Component {
           </Tab>
         </TabList>
         <TabPanel>
-        <Courses/>
+            <Courses/>
+        </TabPanel>
+        <TabPanel>
+            <AddCourse/>
+        </TabPanel>
+        <TabPanel>
+            <AddCourseContent/>
         </TabPanel>
       </Tabs>
     );
