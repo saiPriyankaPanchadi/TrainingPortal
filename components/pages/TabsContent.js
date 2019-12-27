@@ -6,20 +6,28 @@ import Courses from "./Tabs/Courses";
 import "./style.css";
 
 class TabsContent extends Component {
-  state={
+  state = {
     tabIndex: 0
-  }
+  };
   render() {
     return (
-      <Tabs className ="tabs">
-        <TabList className="tab-nav-container">
-          <Tab className={`${this.state.tabIndex === 0 ? 'active' : null }`}>
+      <Tabs className="tabs">
+        <TabList
+          className="tab-nav-container"
+          selectedIndex={this.state.tabIndex}
+          onSelect={tabIndex =>
+            this.setState({
+              tabIndex
+            })
+          }
+        >
+          <Tab className={`${this.state.tabIndex === 0 ? "active" : null}`}>
             <Courses />
           </Tab>
-          <Tab className={`${this.state.tabIndex === 1 ? 'active' : null }`}>
+          <Tab className={`${this.state.tabIndex === 1 ? "active" : null}`}>
             <AddCourse />
           </Tab>
-          <Tab className={`${this.state.tabIndex === 2 ? 'active' : null }`}>
+          <Tab className={`${this.state.tabIndex === 2 ? "active" : null}`}>
             <AddCourseContent />
           </Tab>
         </TabList>
