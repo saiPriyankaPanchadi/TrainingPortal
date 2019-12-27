@@ -1,0 +1,17 @@
+
+.tabs{
+  padding-top: 1rem;
+
+}
+.tab-nav-container{
+   list-style-type: none;
+   display:grid;
+   justify-content: center;
+   align-content: center;
+   text-align: center;
+   grid-template-columns: repeat(3, 1fr);
+   grid-gap: 1rem;
+   
+}
+
+/* Tab nav Hover effect */

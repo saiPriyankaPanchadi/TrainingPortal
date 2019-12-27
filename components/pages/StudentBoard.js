@@ -1,17 +1,5 @@
 import React, { Component } from "react";
-import {
-  Grid,
-  Cell,
-  Tabs,
-  Tab,
-  Card,
-  CardActions,
-  Button,
-  CardMenu,
-  IconButton,
-  CardText,
-  TabList
-} from "react-mdl";
+import { Grid, Cell, Button, IconButton } from "react-mdl";
 import TabsContent from "./TabsContent";
 
 class StudentBoard extends Component {
@@ -30,7 +18,7 @@ class StudentBoard extends Component {
   }
 
   render() {
-    const { currentUserName} = this.state;
+    const { currentUserName } = this.state;
 
     return (
       <div>
