@@ -20,25 +20,29 @@ courseId:'01'
     });
   }
 
+
   render() {
     return (
-     
-       
-      <form className="addCourse" onSubmit={this.handleSubmit}>
+     <div className="container">
+      <div id="wrapper"> 
+      <form  className = 'form'  onSubmit={this.handleSubmit}>
       <div>
         <label htmlFor="courseId"> courseId</label>
-        <input id="courseId" name="courseId" type="courseId" value={this.state.courseId} disabled />
+        <input id="courseId" class="fadeIn second" name="courseId" type="courseId" value={this.state.courseId} disabled />
 </div>
+<div>
         <label htmlFor="courseName">  courseName</label>
-        <input id="courseName" name="courseName" type="courseName"  />
-        
-<br/>
+        <input id="courseName" class="fadeIn second" name="courseName" type="courseName"  />
+      </div>  
+<div>
         <label htmlFor="description">  description</label>
-        <input id="description" name="description" type="description" /> 
-
-        <button primary='btn-bt'>Send data!</button>
+        <input id="description" name="description" class="fadeIn second" type="description" /> 
+</div> <br/>
+        <button className="button">Send data!</button>
+        
       </form>
-    
+    </div>
+    </div>
 
     );
   }
