@@ -15,3 +15,15 @@
 }
 
 /* Tab nav Hover effect */
+
+ul li:hover {
+color:rgb(245, 222, 18);
+cursor: pointer;
+}
+ul li:hover path {
+fill:rgb(245, 222, 18);
+}
+/* Active Tab */
+.active{
+  border-bottom: 4px solid rgb(226, 69, 134);
+}
