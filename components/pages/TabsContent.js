@@ -11,16 +11,16 @@ class TabsContent extends Component {
   };
   render() {
     return (
-      <Tabs className="tabs">
-        <TabList
-          className="tab-nav-container"
-          selectedIndex={this.state.tabIndex}
-          onSelect={tabIndex =>
-            this.setState({
-              tabIndex
-            })
-          }
-        >
+      <Tabs
+        className="tabs"
+        selectedIndex={this.state.tabIndex}
+        onSelect={tabIndex =>
+          this.setState({
+            tabIndex
+          })
+        }
+      >
+        <TabList className="tab-nav-container">
           <Tab className={`${this.state.tabIndex === 0 ? "active" : null}`}>
             <Courses />
           </Tab>
