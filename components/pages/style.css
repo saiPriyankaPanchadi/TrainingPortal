@@ -35,5 +35,13 @@ color:rgb(245, 222, 18);
   fill:rgb(245, 222, 18);
 }
 
-
-
+.link {
+  color: #FFF;
+}
+.link:hover path{
+   color: rgb(228, 225, 53)
+}
+.btn-primary{
+  background-color:white;
+  border-radius: 10px;
+}

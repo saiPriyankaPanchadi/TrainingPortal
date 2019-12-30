@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import { Grid, Cell } from "react-mdl";
 import TabsContent from "./TabsContent";
+import UpComings from "./UpComings";
 
 class StudentBoard extends Component {
   constructor(props) {
@@ -35,6 +36,9 @@ class StudentBoard extends Component {
             </Cell>
           </Grid>
         </div>
+        <div className="page-footer">
+      <UpComings/>
+      </div>
       </div>
     );
   }

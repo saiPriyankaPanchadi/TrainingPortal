@@ -4,6 +4,7 @@ import AddCourse from "./Tabs/AddCourse";
 import AddCourseContent from "./Tabs/AddCourseContent";
 import Courses from "./Tabs/Courses";
 import "./style.css";
+import UpComings from "./UpComings";
 
 class TabsContent extends Component {
   state = {
@@ -11,6 +12,7 @@ class TabsContent extends Component {
   };
   render() {
     return (
+      <div>
       <Tabs
         className="tabs"
         selectedIndex={this.state.tabIndex}
@@ -44,6 +46,8 @@ class TabsContent extends Component {
             <AddCourseContent/>
         </TabPanel>
       </Tabs>
+      
+      </div>
     );
   }
 }

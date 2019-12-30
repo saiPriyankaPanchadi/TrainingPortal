@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 
-
+import {Link} from 'react-router-dom';
+import '../style.css';
 
 class Courses extends Component {
     constructor(){
@@ -14,14 +15,12 @@ class Courses extends Component {
     return (
       <div className='courses'>
       <h3> Courses Available</h3>
+
+
+
+      
       <ul>
-      <a href="https://www.javatpoint.com/reactjs-tutorial"
-   onmouseover="this.style.backgroundColor='#ffdd00';this.style.color='#aaaaaa'"
-   onmouseout="this.style.backgroundColor='transparent';this.style.color='inherit'">
-Reactjs for beginners
-</a>
-    
-     
+   <Link to="/" style={{ color: 'yellow' }} className ="btn-primary">BACK To HOME</Link>
       </ul>
 
       </div>

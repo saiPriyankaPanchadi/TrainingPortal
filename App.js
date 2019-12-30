@@ -11,6 +11,7 @@ import Register from './components/auth/Register';
 import Navbar from './components/layout/Navbar';
 import Home from './components/pages/Home';
 import StudentBoard from './components/pages/StudentBoard';
+import Courses from './components/pages/Tabs/Courses';
 
 function onAuthRequired({history}) {
   history.push('/login');
@@ -43,7 +44,7 @@ function App() {
               />
               <Route path="/implicit/callback" component={ImplicitCallback} />
               <Route path="/forgotPassword" exact={true} component={ForgotPassword} />
-            
+            <Route path= '/courses/: slug' component = {Courses}/>
              
             </div>
           </div>
