@@ -15,14 +15,6 @@ class Courses extends Component {
     return (
       <div className='courses'>
       <h3> Courses Available</h3>
-
-
-
-      
-      <ul>
-   <Link to="/" style={{ color: 'yellow' }} className ="btn-primary">BACK To HOME</Link>
-      </ul>
-
       </div>
     );
   }

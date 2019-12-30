@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import { FaBookOpen, FaCompass, FaCommentsDollar } from "react-icons/fa";
 import "./style.css";
+import { Link } from "react-router-dom";
 
 class UpComings extends Component {
   state = {
@@ -39,6 +40,11 @@ class UpComings extends Component {
             );
           })}
         </div>
+        <ul>
+          <Link to="/" style={{ color: "yellow" }} className="btn-primary">
+            BACK To HOME
+          </Link>
+        </ul>
       </section>
     );
   }
