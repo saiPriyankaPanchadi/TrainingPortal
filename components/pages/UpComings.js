@@ -1,10 +1,12 @@
-import React from 'react';
+import React, { Component } from "react";
 
-const  UpComings =() =>{
-return (
-  <h3>
-  Up Comings courses
-  </h3>
-)
+class UpComings extends Component {
+  render() {
+    return (
+      <div>
+        <h4>UpComings</h4>
+      </div>
+    );
+  }
 }
-export default UpComings
+export default UpComings;
