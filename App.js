@@ -12,6 +12,7 @@ import Navbar from './components/layout/Navbar';
 import Home from './components/pages/Home';
 import StudentBoard from './components/pages/StudentBoard';
 import Courses from './components/pages/Tabs/Courses';
+import CoursesDetails from './components/pages/Tabs/CoursesDetails';
 
 function onAuthRequired({history}) {
   history.push('/login');
