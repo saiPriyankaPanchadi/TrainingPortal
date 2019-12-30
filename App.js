@@ -1,13 +1,13 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
-import {Route} from 'react-router-dom';
+import {Route,Switch} from 'react-router-dom';
 import { Security, SecureRoute, ImplicitCallback } from '@okta/okta-react';
-
+/*Login  */
 import Login from './components/auth/Login';
 import ForgotPassword from './components/auth/ForgotPassword';
 import Register from './components/auth/Register';
-
+/* pages*/
 import Navbar from './components/layout/Navbar';
 import Home from './components/pages/Home';
 import StudentBoard from './components/pages/StudentBoard';
@@ -36,7 +36,7 @@ function App() {
                 )}
               />
                  <Route
-                path="/register"
+                path="/register" exact={true}
                 render={() => (
                   <Register baseUrl="https://dev-381928.okta.com" />
                 )}

@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Grid, Cell, Button, IconButton } from "react-mdl";
+import { Grid, Cell } from "react-mdl";
 import TabsContent from "./TabsContent";
 
 class StudentBoard extends Component {
@@ -26,7 +26,7 @@ class StudentBoard extends Component {
           Welcome {currentUserName} on student Portal
         </h3>
 
-        <div style={{ width: "100%", margin: "auto" }}>
+        <div style={{ width: "100%", height: '100%',  margin: "auto" }}>
           <Grid className="studentsInfo">
             <Cell col={12}>
               <div className="category-tabs">
