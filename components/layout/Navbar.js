@@ -2,9 +2,11 @@ import React from "react";
 import { Link } from "react-router-dom";
 import '../auth/styles.css'
 import { withAuth } from '@okta/okta-react';
+import { FaTrophy } from "react-icons/fa";
 
 export default withAuth(
 class Navbar extends React.Component {
+  
   logout = async () => {
       this.props.auth.logout('/');
     };
@@ -14,6 +16,7 @@ class Navbar extends React.Component {
       <div className = 'header-color'>
       <nav className="navbar navbar-expand-sm navbar-dark mb-4">
         <div className="container">
+        <div ><FaTrophy/></div>
           <Link className="navbar-brand" to="/">
             Training Portal
           </Link>
