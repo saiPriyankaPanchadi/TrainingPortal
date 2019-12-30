@@ -1,8 +1,13 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import '../auth/styles.css'
+import { withAuth } from '@okta/okta-react';
 
+export default withAuth(
 class Navbar extends React.Component {
+  logout = async () => {
+      this.props.auth.logout('/');
+    };
   render() {
   
     return (
@@ -43,6 +48,11 @@ class Navbar extends React.Component {
                   ContactUs
                 </Link>
               </li>
+              <li>
+               <button className="btn btn-light btn-lg" onClick={this.logout}>
+            Logout
+          </button>
+              </li>
             </ul>
           </div>
         </div>
@@ -51,4 +61,4 @@ class Navbar extends React.Component {
     );
   }
 }
-export default Navbar;
+);

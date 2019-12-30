@@ -25,10 +25,6 @@ export default withAuth(
       this.props.auth.login('/');
     };
 
-    logout = async () => {
-      this.props.auth.logout('/');
-    };
-
     render() {
       if (this.state.authenticated === null) return null;
 
@@ -38,9 +34,7 @@ export default withAuth(
             You have entered the student portal,{' '}
             <Link to="/courses">click here</Link>
           </p>
-          <button className="btn btn-light btn-lg" onClick={this.logout}>
-            Logout
-          </button>
+          
         </div>
       ) : (
         <div>
