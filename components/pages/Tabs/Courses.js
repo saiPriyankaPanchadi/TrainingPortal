@@ -3,12 +3,13 @@ import {Link} from 'react-router-dom';
 import CourseDetails from './CourseDetails'
 import '../style.css';
 import {ProductConsumer} from '../../../Context'
+import {storeProducts} from './Data'
 
 class Courses extends Component {
     constructor(){
       super();
       this.state={
-        products:[]
+        products:storeProducts
       }
     }
   render() {
@@ -17,7 +18,11 @@ class Courses extends Component {
       <div className='container'>
       <div className ='row'>
       <ProductConsumer>
-      {(value)=>{return 'hi'}}
+      {(value)=>{
+        return value.products.map(product =>{
+          return <CourseDetails key = {product.id} product={product}/> 
+        })
+      }}
       </ProductConsumer>
       </div>
       <h3> Courses Available</h3>
