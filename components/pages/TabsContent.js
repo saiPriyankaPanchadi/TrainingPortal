@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
 import AddCourse from "./Tabs/AddCourse";
-import AddCourseContent from "./Tabs/AddCourseContent";
+import Feedback from "./Tabs/Feedback";
 import Courses from "./Tabs/Courses";
 import "./style.css";
 import UpComings from "./UpComings";
@@ -32,7 +32,7 @@ class TabsContent extends Component {
            <p style={{}}/>
           </Tab>
           <Tab className={`${this.state.tabIndex === 2 ? "tab-selected active" : null}`}>
-          AddCourseContent
+          Feedback
           <p style={{}}/>
           </Tab>
         </TabList>
@@ -43,7 +43,7 @@ class TabsContent extends Component {
             <AddCourse/>
         </TabPanel>
         <TabPanel>
-            <AddCourseContent/>
+            <Feedback/>
         </TabPanel>
       </Tabs>
       
