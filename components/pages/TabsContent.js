@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
-import AddCourse from "./Tabs/AddCourse";
+
 import DevopsTab from "./Tabs/DevopsTab";
 import Courses from "./Tabs/Courses";
 import "./style.css";
