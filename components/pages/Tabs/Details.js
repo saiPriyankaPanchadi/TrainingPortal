@@ -48,7 +48,7 @@ class Details extends Component {
                   <Link to= "/courses">
                   <ButtonContainer>Back to Courses</ButtonContainer>
                   </Link>
-                    <ButtonContainer diabled ={enroll?true :false} onClick={()=>{
+                    <ButtonContainer enroll disabled ={enroll?true :false} onClick={()=>{
                       value.enroll(id)
                     }}> {enroll?"Enrolled" : "Enroll to course"}</ButtonContainer>
                   </div>
