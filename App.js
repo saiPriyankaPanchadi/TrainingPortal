@@ -14,6 +14,8 @@ import StudentBoard from './components/pages/StudentBoard';
 import Courses from './components/pages/Tabs/Courses';
 import CoursesDetails from './components/pages/Tabs/CoursesDetails';
 import Details from './components/pages/Tabs/Details';
+/*cart*/
+import Cart from './components/Cart/Cart';
 
 function onAuthRequired({history}) {
   history.push('/login');
@@ -47,7 +49,7 @@ function App() {
               <Route path="/implicit/callback" component={ImplicitCallback} />
               <Route path="/forgotPassword" exact={true} component={ForgotPassword} />
            <Route path="/details" exact={true} component={Details} />
-             
+             <Route path="/enroll" component={Cart} />
             </div>
           </div>
         </Security>

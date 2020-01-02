@@ -6,7 +6,10 @@ class ProductProvider extends Component {
   state = {
     products: [],
     detailProduct: detailProduct,
-    cart : []
+    cart : [],
+    enrollSubTotal : 0,
+    enrollTax:0,
+    enrollTotal:0
   };
 
   componentDidMount() {
@@ -51,13 +54,30 @@ class ProductProvider extends Component {
     }, () => {console.log(this.state)});
   };
 
+  increment =(id)=> {
+    console.log("inc")
+  }
+   decrement =(id)=> {
+    console.log("dec")
+  }
+   removeItem =(id)=> {
+    console.log("remove")
+  }
+  clearCart =(id) =>{
+console.log("clear")
+  }
+
   render() {
     return (
       <ProductContext.Provider
         value={{
           ...this.state,
           handleDetail: this.handleDetail,
-          enroll: this.enroll
+          enroll: this.enroll,
+          increment:this.increment,
+          decrement:this.decrement,
+          removeItem : this.removeItem,
+          clearCart: this.clearCart
         }}
       >
         {this.props.children}{" "}
