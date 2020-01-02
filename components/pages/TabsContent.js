@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
 import AddCourse from "./Tabs/AddCourse";
-import Feedback from "./Tabs/Feedback";
+import DevopsTab from "./Tabs/DevopsTab";
 import Courses from "./Tabs/Courses";
 import "./style.css";
 import UpComings from "./UpComings";
@@ -24,15 +24,15 @@ class TabsContent extends Component {
       >
         <TabList className="tab-nav-container">
           <Tab className={`${this.state.tabIndex === 0 ? "tab-selected active" : null}`}>
-            Courses
+            Full stack
             <p style={{}}/>
           </Tab>
           <Tab className={`${this.state.tabIndex === 1 ? "tab-selected active" : null}`}>
-           AddCourse
+           WebDevolpment
            <p style={{}}/>
           </Tab>
           <Tab className={`${this.state.tabIndex === 2 ? "tab-selected active" : null}`}>
-          Feedback
+          Devops
           <p style={{}}/>
           </Tab>
         </TabList>
@@ -40,10 +40,10 @@ class TabsContent extends Component {
             <Courses/>
         </TabPanel>
         <TabPanel>
-            <AddCourse/>
+           WebDevolpment
         </TabPanel>
         <TabPanel>
-            <Feedback/>
+            <DevopsTab/>
         </TabPanel>
       </Tabs>
       

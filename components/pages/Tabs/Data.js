@@ -92,7 +92,7 @@ export const storeProducts = [
     id: 8,
     title: "DesignPatterns",
     img:
-      "https://image.slidesharecdn.com/designpatternsjdk-150123060039-conversion-gate02/95/design-patterns-jdk-examples-1-638.jpg?cb=1421993055",
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTvXBKK577JTDQkJoukoVAT65gFLaTR3U0i4UTVDpbqQQI0NPIc",
     price: 2,
     company: "apple",
     info:
@@ -104,16 +104,15 @@ export const storeProducts = [
 ];
 
 export const detailProduct = {
-  id: 1,
-  title: "ReactJs",
-  img:
-    "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/512px-React-icon.svg.png",
-
-  price: 10,
-  company: "google",
-  info:
-    "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo. Brooklyn sriracha semiotics, DIY coloring book mixtape craft beer sartorial hella blue bottle. Tote bag wolf authentic try-hard put a bird on it mumblecore. Unicorn lumbersexual master cleanse blog hella VHS, vaporware sartorial church-key cardigan single-origin coffee lo-fi organic asymmetrical. Taxidermy semiotics celiac stumptown scenester normcore, ethical helvetica photo booth gentrify.",
-  enroll: false,
-  count: 0,
-  total: 0
+   id: 1,
+    title: "ReactJs",
+    img:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/512px-React-icon.svg.png",
+    price: 10,
+    company: "Priyanka",
+    info:
+      "React (also known as React. js or ReactJS) is a JavaScript library for building user interfaces. It is maintained by Facebook and a community of individual developers and companies. React can be used as a base in the development of single-page or mobile applications.",
+    enroll: false,
+    count: 0,
+    total: 0
 };

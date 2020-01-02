@@ -17,15 +17,16 @@ class Courses extends Component {
       <div className="py-5">
       <div className='container'>
       <div className ='row'>
+      
       <ProductConsumer>
-      {(value)=>{
-        return value.products.map(product =>{
-          return <CourseDetails key = {product.id} product={product}/> 
-        })
-      }}
+     {value => {
+       return value.products.map( product => {
+         return <CourseDetails key ={product.id} product ={product}/>;
+       })
+     }}
       </ProductConsumer>
       </div>
-      <h3> Courses Available</h3>
+     
       </div>
       </div>
     );
