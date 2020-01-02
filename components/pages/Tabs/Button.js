@@ -6,6 +6,7 @@ export default (ButtonContainer = styled.button`
   font-size: 1.4rem;
   background: transparent blue;
   border: 0.05rem solid dark;
+  border-color:${props=> props.cart ? "yellow": "pink" };
   border-radius: 0.5rem;
   padding: 0.2rem 0.5rem;
   cursor: pointer;
