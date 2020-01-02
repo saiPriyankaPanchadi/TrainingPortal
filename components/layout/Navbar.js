@@ -7,6 +7,10 @@ import { FaTrophy } from "react-icons/fa";
 export default withAuth(
 class Navbar extends React.Component {
   
+   login = async () => {
+      this.props.auth.login('/');
+    };
+
   logout = async () => {
       this.props.auth.logout('/');
     };
@@ -40,19 +44,21 @@ class Navbar extends React.Component {
                   StudentBoard
                 </Link>
               </li>
-            
-              <li className="nav-item">
-                <Link className="nav-link" to="/contact">
-                  Admin
-                </Link>
-              </li>
               <li className="nav-item">
                 <Link className="nav-link" to="/contact">
                   ContactUs
                 </Link>
               </li>
+              <li className="nav-item">
+                <Link className="nav-link" to="/contact">
+                  MyProfile
+                </Link>
+              </li>
+               <button className="btn btn-light btn-lg" onClick={this.login}>
+            Login
+          </button> 
               <li>
-               <button className="btn btn-light btn-lg" onClick={this.logout}>
+               <button className="btn btn-dark btn-lg" onClick={this.logout}>
             Logout
           </button>
               </li>
