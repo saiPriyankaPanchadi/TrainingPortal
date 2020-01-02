@@ -54,7 +54,7 @@ export default withAuth(
                     <Link to="/cart" className="ml-auto">
                       <ButtonContainer>
                         <FaCartPlus />
-                        my cart
+                        my courses
                       </ButtonContainer>
                     </Link>
                   </li>
