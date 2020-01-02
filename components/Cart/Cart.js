@@ -4,7 +4,7 @@ class Cart extends React.Component {
 render(){
   return (
     <section>
-    <Title name ="Enroll" title = "enroll" />
+    <h3 className = "text normal"> Enroll Course </h3>
     </section>
   )
 }

@@ -49,7 +49,7 @@ function App() {
               <Route path="/implicit/callback" component={ImplicitCallback} />
               <Route path="/forgotPassword" exact={true} component={ForgotPassword} />
            <Route path="/details" exact={true} component={Details} />
-             <Route path="/enroll" component={Cart} />
+             <Route path="/cart" exact={true} component={Cart} />
             </div>
           </div>
         </Security>
