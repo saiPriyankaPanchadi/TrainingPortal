@@ -25,9 +25,7 @@ export default class CourseDetails extends Component {
                     className="cart-btn"
                     disabled={enroll ? true : false}
                     onClick={() => {
-                     // value.addCourse(id);
-                     // value.openModal(id);
-                     console.log('enrolled');
+                     value.enroll(id);
                     }}
                   >
                     {enroll ? (
