@@ -467,3 +467,25 @@ h6 {
   }
 }
 /* end of rooms fitler*/
+
+/* cart*/
+
+.btn-black{
+  background:transparent;
+  text-transform: capitalize;
+  font-size: 0.08rem !important;
+  color: darkcyan;
+  border-radius: 0 !important;
+  border:0.1rem solid darkcyan !important;
+}
+.btn-black:hover{
+  background: darkcyan;
+  color:rgb(224, 224, 15) !important;
+
+}
+.cart-icon{
+  cursor:pointer;
+  font-size:1.2rem;
+  color:rgb(206, 133, 7);
+  
+}
