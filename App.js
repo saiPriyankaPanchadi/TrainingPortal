@@ -1,5 +1,4 @@
 import React from "react";
-import logo from "./logo.svg";
 import "./App.css";
 import { Route, Switch } from "react-router-dom";
 import { Security, SecureRoute, ImplicitCallback } from "@okta/okta-react";
@@ -11,8 +10,6 @@ import Register from "./components/auth/Register";
 import Navbar from "./components/layout/Navbar";
 import Home from "./components/pages/Home";
 import StudentBoard from "./components/pages/StudentBoard";
-import Courses from "./components/pages/Tabs/Courses";
-import CoursesDetails from "./components/pages/Tabs/CoursesDetails";
 import Details from "./components/pages/Tabs/Details";
 /*cart*/
 import Cart from "./components/Cart/Cart";
