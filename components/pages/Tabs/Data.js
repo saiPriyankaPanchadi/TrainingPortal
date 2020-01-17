@@ -15,7 +15,7 @@ export const storeProducts = [
   {
     id: 2,
     title: "NodeJs",
-    img: "https://nodejs.org/static/images/logos/nodejs-new-pantone-black.png",
+    img: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Node.js_logo.svg/1200px-Node.js_logo.svg.png",
     price: 16,
     company: "google",
     info:

@@ -1,11 +1,10 @@
 import React from "react";
-import { ProductConsumer } from "../../Context";
 import "../../App.css";
 import {FaTrash} from 'react-icons/fa';
 
 export default function CartItem({ item, value }) {
   const { id, title, img, price, total, count } = item;
-  const { increment, decrement, removeItem, clearCart } = value;
+  const { increment, decrement, removeItem } = value;
   return (
     <div className="container ">
       <div className="row my-1 text=-captalize text-center">

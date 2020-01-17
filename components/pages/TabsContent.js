@@ -4,7 +4,7 @@ import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
 import DevopsTab from "./Tabs/DevopsTab";
 import Courses from "./Tabs/Courses";
 import "./style.css";
-import UpComings from "./UpComings";
+
 
 class TabsContent extends Component {
   state = {

@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import { ProductConsumer } from "../../../Context";
-import styled from "styled-components";
 import { Link } from "react-router-dom";
 import { ButtonContainer } from "./Button";
 
@@ -29,7 +28,7 @@ class Details extends Component {
               {/* Product info*/}
               <div className="row">
                 <div className="col-10 mx-auto col-md-6 my-3">
-                  <img src={img} className="img-fluid" aly="reactjs" />
+                  <img src={img} className="img-fluid" alt="reactjs" />
                 </div>
                 <div className="col-10 mx-auto col-md-6 my-3 text-capitalize ">
                   <h3>Course : {title} </h3>

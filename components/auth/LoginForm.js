@@ -27,7 +27,7 @@ export default withAuth(class LoginForm extends Component {
     .then(res => this.setState({
       sessionToken: res.sessionToken
     }))
-    .catch(err => console.log('Found an error', err));
+    .catch(err => alert('Found an error', err));
   }
 
   handleUsernameChange=(e)=> {

@@ -2,8 +2,7 @@ import React, { Component } from "react";
 import OktaAuth from "@okta/okta-auth-js";
 import { withAuth } from "@okta/okta-react";
 import "./styles.css";
-import { Link } from "react-router-dom";
-import LoginForm from "./LoginForm";
+
 
 export default withAuth(
   class Register extends Component {
